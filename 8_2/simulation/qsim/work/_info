@@ -1,0 +1,157 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\Hanliutong\OneDrive\Homework\Digital logic experiment\16071118\8\simulation\qsim
+vproject8
+Z1 !s100 1:zCSjUEMl_ghz`XXiH8`0
+Z2 I3]OMI;c93Ulmld82_acO<3
+Z3 Vd3?Vj0]Q01Ib]k9CW;DCL3
+Z4 dC:\Users\Hanliutong\OneDrive\Homework\Digital logic experiment\16071118\8_2\simulation\qsim
+Z5 w1511837557
+Z6 8project8.vo
+Z7 Fproject8.vo
+L0 31
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -work|work|project8.vo|
+Z10 o-work work -O0
+!i10b 1
+!s85 0
+Z11 !s108 1511837559.850000
+Z12 !s107 project8.vo|
+!s101 -O0
+vproject8_vlg_check_tst
+!i10b 1
+Z13 !s100 `MKBeM^;UYdiN?3Fm9m>T0
+Z14 Ib1Sc1ecTfnIMFGaWddAjJ1
+Z15 V41;<zN90H`dfDPR;882C91
+R4
+Z16 w1511837556
+Z17 8project8.vt
+Z18 Fproject8.vt
+L0 67
+R8
+r1
+!s85 0
+31
+Z19 !s108 1511837560.013000
+Z20 !s107 project8.vt|
+Z21 !s90 -work|work|project8.vt|
+!s101 -O0
+R10
+vproject8_vlg_sample_tst
+!i10b 1
+Z22 !s100 bT>IcKSHzYCU9@JZUAFG`3
+Z23 Ig[fcfkO^zl3e]zLFHD1QD3
+Z24 VTIP2RSmCGH9>Z?if562EI1
+R4
+R16
+R17
+R18
+L0 29
+R8
+r1
+!s85 0
+31
+R19
+R20
+R21
+!s101 -O0
+R10
+vproject8_vlg_vec_tst
+!i10b 1
+Z25 !s100 GcbRBi5LaPFi8VmPTe;Wd1
+Z26 IGGn[45C]J1k:7olzNzVbh1
+Z27 V_HeVHbh]QS50o=X:EBWTa2
+R4
+R16
+R17
+R18
+Z28 L0 692
+R8
+r1
+!s85 0
+31
+R19
+R20
+R21
+!s101 -O0
+R10
+vshifting_register
+Z29 II`dDYPXInY10cd4e?TTHf1
+Z30 VLTf=g2V:V=4j8DD4gUVVI2
+Z31 dC:\Users\Hanliutong\OneDrive\Homework\Digital logic experiment\16071118\8\simulation\qsim
+Z32 w1510661439
+R6
+R7
+L0 31
+R8
+r1
+31
+R9
+R10
+Z33 !s100 1F?_Cf:UIA;_S1`5HU6e^1
+Z34 !s108 1510661440.206000
+R12
+!i10b 1
+!s85 0
+!s101 -O0
+vshifting_register_vlg_check_tst
+Z35 !s100 fIoi;XmkAXC?5=>I3KzC40
+Z36 Ib>>]<IJ>IiQjli@jM2ENP3
+Z37 V70DbUjVY^IkX=4l1YDkgG3
+R31
+Z38 w1510661438
+R17
+R18
+L0 61
+R8
+r1
+31
+Z39 !s108 1510661440.338000
+Z40 !s107 project8.vt|
+R21
+R10
+!i10b 1
+!s85 0
+!s101 -O0
+vshifting_register_vlg_sample_tst
+Z41 !s100 zIdRYCYiXFz<hCaAR^Y^?2
+Z42 ICd4KJh4;9>2kChacEYB@62
+Z43 Vmd=NVWVz4V9^@B]9i]<1n2
+R31
+R38
+R17
+R18
+L0 29
+R8
+r1
+31
+R39
+R40
+R21
+R10
+!i10b 1
+!s85 0
+!s101 -O0
+vshifting_register_vlg_vec_tst
+Z44 !s100 lLlI8m_3[<_PiDcQKkhin1
+Z45 I]]>753ZJCdJk>NIib4?3E1
+Z46 V]@fMF6hMd1ZJ03N0Ibl@A2
+R31
+R38
+R17
+R18
+Z47 L0 801
+R8
+r1
+31
+R39
+R40
+R21
+R10
+!i10b 1
+!s85 0
+!s101 -O0

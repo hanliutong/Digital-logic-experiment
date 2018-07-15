@@ -1,0 +1,31 @@
+# do project9.do 
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module keyboard_shake
+# 
+# Top level modules:
+# 	keyboard_shake
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module keyboard_shake_vlg_sample_tst
+# -- Compiling module keyboard_shake_vlg_check_tst
+# -- Compiling module keyboard_shake_vlg_vec_tst
+# 
+# Top level modules:
+# 	keyboard_shake_vlg_vec_tst
+# vsim -L cycloneiii_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate -c -t 1ps -novopt work.keyboard_shake_vlg_vec_tst 
+# Loading work.keyboard_shake_vlg_vec_tst
+# Loading work.keyboard_shake
+# Loading cycloneiii_ver.cycloneiii_io_obuf
+# Loading cycloneiii_ver.cycloneiii_io_ibuf
+# Loading cycloneiii_ver.cycloneiii_clkctrl
+# Loading cycloneiii_ver.cycloneiii_mux41
+# Loading cycloneiii_ver.cycloneiii_ena_reg
+# Loading cycloneiii_ver.cycloneiii_lcell_comb
+# Loading altera_ver.dffeas
+# Loading work.keyboard_shake_vlg_sample_tst
+# Loading work.keyboard_shake_vlg_check_tst
+# Loading altera_ver.PRIM_GDFF_LOW
+# Simulation passed !
+# ** Note: $finish    : project9.vt(150)
+#    Time: 1 us  Iteration: 0  Instance: /keyboard_shake_vlg_vec_tst/tb_out

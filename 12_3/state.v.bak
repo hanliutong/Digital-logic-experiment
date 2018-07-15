@@ -1,0 +1,203 @@
+module state(Fin_1up,Fin_2up,Fin_3up,Fin_2dn,Fin_3dn,Fin_4dn,Fin_1,Fin_2,Fin_3,Fin_4,clk_1KHz,c_floor,drc,t_floor,full,arrival);
+input full,arrival;
+input Fin_1up,Fin_2up,Fin_3up;
+input Fin_2dn,Fin_3dn,Fin_4dn;
+input Fin_1,Fin_2,Fin_3,Fin_4;
+input [1:0]c_floor;
+input clk_1KHz;
+output reg [1:0]drc=2'b00;//drc-运行方向：00为等待，01上行，10下行
+output reg [1:0]t_floor=2'b00;//目标层
+
+always @ (posedge clk_1KHz)
+begin
+if (full)
+	begin
+		if (drc==2'b00)
+		case (c_floor)
+		2'b00:
+			begin
+				if (Fin_1==0) drc<=2'b00;
+				if (Fin_2==0) drc<=2'b01;
+				if (Fin_3==0) drc<=2'b01;
+				if (Fin_4==0) drc<=2'b01;
+			end
+		2'b01:
+			begin
+				if (Fin_1==0) drc<=2'b10;
+				if (Fin_2==0) drc<=2'b00;
+				if (Fin_3==0) drc<=2'b01;
+				if (Fin_4==0) drc<=2'b01;
+			end
+		2'b10:
+			begin
+				if (Fin_1==0) drc<=2'b10;
+				if (Fin_2==0) drc<=2'b10;
+				if (Fin_3==0) drc<=2'b00;
+				if (Fin_4==0) drc<=2'b01;
+			end
+		2'b11:
+			begin
+				if (Fin_1==0) drc<=2'b10;
+				if (Fin_2==0) drc<=2'b10;
+				if (Fin_3==0) drc<=2'b10;
+				if (Fin_4==0) drc<=2'b00;
+			end
+		default:drc<=2'b00;
+		endcase
+		
+		else if (drc==2'b01)
+			case (c_floor)
+			2'b00:begin 
+						if (Fin_2==0) t_floor<=2'b01;
+						else if (Fin_3==0) t_floor<=2'b10;
+						else if (Fin_4==0) t_floor<=2'b11;
+						else begin t_floor<=2'b00; drc<=2'b00;end
+					end
+			2'b01:begin 
+						if (Fin_3==0) t_floor<=2'b10;
+						else if (Fin_4==0) t_floor<=2'b11;
+						else begin t_floor<=2'b01; drc<=2'b00;end
+					end	
+			2'b10:begin 
+						if (Fin_4==0) t_floor<=2'b11;
+						else begin t_floor<=2'b10; drc<=2'b00;end
+					end	
+			2'b11:begin 
+						begin t_floor<=2'b11; drc<=2'b00;end
+					end	
+			default:;
+			endcase
+	
+		else if (drc==2'b10)
+			case (c_floor)
+			2'b11:begin 
+						if (Fin_3==0) t_floor<=2'b10;
+						else if (Fin_2==0) t_floor<=2'b01;
+						else if (Fin_1==0) t_floor<=2'b00;
+						else begin t_floor<=2'b11; drc<=2'b00;end
+					end
+			2'b10:begin 
+						if (Fin_2==0) t_floor<=2'b01;
+						else if (Fin_1==0) t_floor<=2'b00;
+						else begin t_floor<=2'b10; drc<=2'b00;end
+					end	
+			2'b01:begin 
+						if (Fin_1==0) t_floor<=2'b00;
+						else begin t_floor<=2'b01; drc<=2'b00;end
+					end	
+			2'b00:begin 
+						begin t_floor<=2'b00; drc<=2'b00;end
+					end	
+			default:;
+			endcase
+		else drc<=2'b00;
+	end
+	
+else
+	begin
+		if (drc==2'b00)
+		case (c_floor)
+		2'b00:
+			begin
+				if (Fin_1up==0) drc<=2'b01;
+				if (Fin_2up==0) drc<=2'b01;
+				if (Fin_3up==0) drc<=2'b01;
+				if (Fin_2dn==0) drc<=2'b01;
+				if (Fin_3dn==0) drc<=2'b01;
+				if (Fin_4dn==0) drc<=2'b01;
+				if (Fin_1==0) drc<=2'b00;
+				if (Fin_2==0) drc<=2'b01;
+				if (Fin_3==0) drc<=2'b01;
+				if (Fin_4==0) drc<=2'b01;
+			end
+		2'b01:
+			begin
+				if (Fin_1up==0) drc<=2'b10;
+				if (Fin_2up==0) drc<=2'b01;
+				if (Fin_3up==0) drc<=2'b01;
+				if (Fin_2dn==0) drc<=2'b10;
+				if (Fin_3dn==0) drc<=2'b01;
+				if (Fin_4dn==0) drc<=2'b01;
+				if (Fin_1==0) drc<=2'b10;
+				if (Fin_2==0) drc<=2'b00;
+				if (Fin_3==0) drc<=2'b01;
+				if (Fin_4==0) drc<=2'b01;
+			end
+		2'b10:
+			begin
+				if (Fin_1up==0) drc<=2'b10;
+				if (Fin_2up==0) drc<=2'b10;
+				if (Fin_3up==0) drc<=2'b01;
+				if (Fin_2dn==0) drc<=2'b10;
+				if (Fin_3dn==0) drc<=2'b10;
+				if (Fin_4dn==0) drc<=2'b01;
+				if (Fin_1==0) drc<=2'b10;
+				if (Fin_2==0) drc<=2'b10;
+				if (Fin_3==0) drc<=2'b00;
+				if (Fin_4==0) drc<=2'b01;
+			end
+		2'b11:
+			begin
+				if (Fin_1up==0) drc<=2'b10;
+				if (Fin_2up==0) drc<=2'b10;
+				if (Fin_3up==0) drc<=2'b10;
+				if (Fin_2dn==0) drc<=2'b10;
+				if (Fin_3dn==0) drc<=2'b10;
+				if (Fin_4dn==0) drc<=2'b10;
+				if (Fin_1==0) drc<=2'b10;
+				if (Fin_2==0) drc<=2'b10;
+				if (Fin_3==0) drc<=2'b10;
+				if (Fin_4==0) drc<=2'b00;
+			end
+		default:drc<=2'b00;
+		endcase
+		
+		else if (drc==2'b01)
+			case (c_floor)
+			2'b00:begin 
+						if ((Fin_2==0)|(Fin_2dn==0)|(Fin_2up==0)) t_floor<=2'b01;
+						else if ((Fin_3==0)|(Fin_3dn==0)|(Fin_3up==0)) t_floor<=2'b10;
+						else if ((Fin_4==0)|(Fin_4dn==0)) t_floor<=2'b11;
+						else begin if (arrival==1)begin t_floor<=2'b00; drc<=2'b00;end else t_floor<=2'b00; end
+					end
+			2'b01:begin 
+						if ((Fin_3==0)|(Fin_3dn==0)|(Fin_3up==0)) t_floor<=2'b10;
+						else if ((Fin_4==0)|(Fin_4dn==0)) t_floor<=2'b11;
+						else begin if (arrival==1)begin t_floor<=2'b01; drc<=2'b00;end else t_floor<=2'b01; end
+					end	
+			2'b10:begin 
+						if ((Fin_4==0)|(Fin_4dn==0)) t_floor<=2'b11;
+						else begin if (arrival)begin t_floor<=2'b10; drc<=2'b00;end else t_floor<=2'b10; end
+					end	
+			2'b11:begin 
+						begin if (arrival)begin t_floor<=2'b11; drc<=2'b00;end else t_floor<=2'b11;end
+					end	
+			default:;
+			endcase
+	
+		else if (drc==2'b10)
+			case (c_floor)
+			2'b11:begin 
+						if ((Fin_3==0)|(Fin_3dn==0)|(Fin_3up==0)) t_floor<=2'b10;
+						else if ((Fin_2==0)|(Fin_2dn==0)|(Fin_2up==0)) t_floor<=2'b01;
+						else if ((Fin_1==0)|(Fin_1up==0)) t_floor<=2'b00;
+						else begin if (arrival)begin t_floor<=2'b11; drc<=2'b00;end else t_floor<=2'b11;end
+					end
+			2'b10:begin 
+						if ((Fin_2==0)|(Fin_2dn==0)|(Fin_2up==0)) t_floor<=2'b01;
+						else if ((Fin_1==0)|(Fin_1up==0)) t_floor<=2'b00;
+						else begin if (arrival)begin t_floor<=2'b10; drc<=2'b00;end else t_floor<=2'b10; end
+					end	
+			2'b01:begin 
+						if ((Fin_1==0)|(Fin_1up==0)) t_floor<=2'b00;
+						else begin if (arrival)begin t_floor<=2'b01; drc<=2'b00;end else t_floor<=2'b01; end
+					end	
+			2'b00:begin 
+						begin if (arrival)begin t_floor<=2'b00; drc<=2'b00;end else t_floor<=2'b00; end
+					end	
+			default:;
+			endcase
+		else drc<=2'b00;
+	end
+end	
+endmodule

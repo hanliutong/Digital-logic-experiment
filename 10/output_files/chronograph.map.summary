@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Thu Dec 28 11:20:15 2017
+Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version
+Revision Name : chronograph
+Top-level Entity Name : chronograph
+Family : Cyclone III
+Total logic elements : 875
+    Total combinational functions : 699
+    Dedicated logic registers : 459
+Total registers : 459
+Total pins : 28
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

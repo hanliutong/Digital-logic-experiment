@@ -1,0 +1,12 @@
+module register8(CP,F,Din,Dout);
+	input CP,F;
+	input [7:0]Din;
+	output reg [7:0]Dout;
+	reg R=00000000;
+	always @ (posedge CP)
+	begin
+		if (F == 0) R=Din;
+		else Dout=R;
+	end
+		
+	

@@ -1,0 +1,117 @@
+module kbd(clk,SWC,SWR0,SWR1,SWR2,SWR3,key,key_E_4B,F);
+input clk;
+input [3:0]SWC;
+output reg SWR0,SWR1,SWR2,SWR3;
+output reg [15:0]key=16'b1111111111111111;
+output reg [3:0]key_E_4B;
+output reg F;
+reg [1:0]state;
+parameter S0=0,S1=1,S2=2,S3=3;
+integer i,j,k,l;
+reg [32:0]CNT;
+always @ (posedge clk)
+	begin
+	case (state)
+	S0:begin state<=S1;
+		{SWR0,SWR1,SWR2,SWR3}<=4'b1011;
+		end
+	S1:begin state<=S2;
+		{SWR0,SWR1,SWR2,SWR3}<=4'b1101;
+		end
+	S2:begin state<=S3;
+		{SWR0,SWR1,SWR2,SWR3}<=4'b1110;
+		end
+	S3:begin state<=S0;
+		{SWR0,SWR1,SWR2,SWR3}<=4'b0111;
+		end
+	default:begin state<=S0;  end
+	endcase
+	end
+	
+
+
+always @ (posedge clk)
+	begin
+
+	case (state)
+	S0:begin
+		for (i=0;i<=3;i=i+1)
+		begin
+		if(SWC[i]==0)
+			begin
+			key[i]=1'b0;
+			end 
+		else key[i]=1'b1;
+		end
+		end
+
+	S1:begin
+		for (j=0;j<=3;j=j+1)
+		begin
+		if(SWC[j]==0)
+			begin
+			key[j+4]=1'b0;
+			end 
+		else key[j+4]=1'b1;
+		
+		end
+		end
+		
+	S2:begin
+		for (k=0;k<=3;k=k+1)
+		begin
+		if(SWC[k]==0)
+			begin
+			key[k+8]=1'b0;
+			end 
+		else key[k+8]=1'b1;
+		
+		end
+		end
+		
+	S3:begin
+		for (l=0;l<=3;l=l+1)
+		begin
+		if(SWC[l]==0)
+			begin
+			key[l+12]=1'b0;
+			end 
+		else key[l+12]=1'b1;
+		
+		end
+		end
+	default:key=16'b1111111111111111;
+	endcase
+	end
+//always @(CNT)
+//begin
+//if (CNT>3) F<=1;
+//else F<=0;
+//end
+	
+always @(posedge clk)
+begin
+	case (key)
+	16'b0111_1111_1111_1111:begin F=0; key_E_4B=4'b1111;end
+	16'b1011_1111_1111_1111:begin F=0; key_E_4B=4'b1110;end
+	16'b1101_1111_1111_1111:begin F=0; key_E_4B=4'b1101;end
+	16'b1110_1111_1111_1111:begin F=0; key_E_4B=4'b1100;end
+	16'b1111_0111_1111_1111:begin F=0; key_E_4B=4'b1011;end
+	16'b1111_1011_1111_1111:begin F=0; key_E_4B=4'b1010;end
+	16'b1111_1101_1111_1111:begin F=0; key_E_4B=4'b1001;end
+	16'b1111_1110_1111_1111:begin F=0; key_E_4B=4'b1000;end
+	16'b1111_1111_0111_1111:begin F=0; key_E_4B=4'b0111;end
+	16'b1111_1111_1011_1111:begin F=0; key_E_4B=4'b0110;end
+	16'b1111_1111_1101_1111:begin F=0; key_E_4B=4'b0101;end
+	16'b1111_1111_1110_1111:begin F=0; key_E_4B=4'b0100;end
+	16'b1111_1111_1111_0111:begin F=0; key_E_4B=4'b0011;end
+	16'b1111_1111_1111_1011:begin F=0; key_E_4B=4'b0010;end
+	16'b1111_1111_1111_1101:begin F=0; key_E_4B=4'b0001;end
+	16'b1111_1111_1111_1110:begin F=0; key_E_4B=4'b0000;end
+	16'b1111_1111_1111_1111:begin F=1; key_E_4B=key_E_4B;end
+	default:key_E_4B=4'b0000;
+	endcase
+end
+endmodule
+
+	

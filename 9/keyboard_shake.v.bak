@@ -1,0 +1,29 @@
+module keyboard_shake(clk,SW_IN,SW_OUT);
+input clk,SW_IN;
+output reg SW_OUT;
+reg S1,S2,S3,state;
+parameter S1=1;parameter S1=2;parameter S1=3;
+
+always @ (state)
+	if (state==S3) SW_out<=0;
+	else SW_out<=1;
+
+always @ (posedge clk)
+	if (SW_IN == 0)
+		begin
+		case (state)
+			S1:S1<=S2;
+			S2:S2<=S3;
+			S3:S3<=S3;
+		endcase
+		end
+	else
+		begin
+		case (state)
+			S1:S1<=S1；
+			S2:S2<=S1；
+			S3:S3<=S1;
+		endcase
+		end
+endmodule
+		

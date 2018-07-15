@@ -1,0 +1,15 @@
+|led
+data[0] => Decoder0.IN3
+data[1] => Decoder0.IN2
+data[2] => Decoder0.IN1
+data[3] => Decoder0.IN0
+sel <= <GND>
+a <= a.DB_MAX_OUTPUT_PORT_TYPE
+b <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+c <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+d <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+e <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+f <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+g <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+
+

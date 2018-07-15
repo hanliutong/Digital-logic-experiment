@@ -1,0 +1,161 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\Hanliutong\OneDrive\Homework\Digital logic experiment\3\simulation\qsim
+vproject3
+Z1 IXQ:023bkL=W6@MH@Y>CPm0
+Z2 V<NFS_5a21`<3]R0M1h=CB2
+Z3 dC:\Users\Hanliutong\OneDrive\Homework\Digital logic experiment\16071118\3\simulation\qsim
+Z4 w1508911700
+Z5 8project3.vo
+Z6 Fproject3.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 !s90 -work|work|project3.vo|
+Z9 o-work work -O0
+Z10 !s100 dYXX6lBzmC>DGJ3bj;C0=0
+Z11 !s108 1508911701.717000
+Z12 !s107 project3.vo|
+!i10b 1
+!s85 0
+!s101 -O0
+vproject3_vlg_check_tst
+Z13 IP36E>]naQ3Bz]cXSn;lKW2
+Z14 VTU5dCZHZ8X_YB6Dm:`7oE0
+R3
+R4
+Z15 8project3.vt
+Z16 Fproject3.vt
+L0 63
+R7
+r1
+31
+Z17 !s108 1508911701.833000
+Z18 !s107 project3.vt|
+Z19 !s90 -work|work|project3.vt|
+R9
+Z20 !s100 :R;ZJIJmN5CLCZf<dI`e:1
+!i10b 1
+!s85 0
+!s101 -O0
+vproject3_vlg_sample_tst
+Z21 I0O8HJ@JIXOVzg]9kJYWL20
+Z22 VVR@?H<356Hl>bNzT1[c>D2
+R3
+R4
+R15
+R16
+L0 29
+R7
+r1
+31
+R17
+R18
+R19
+R9
+Z23 !s100 N;^lQI@564PG@[?9U;V5K3
+!i10b 1
+!s85 0
+!s101 -O0
+vproject3_vlg_vec_tst
+Z24 IgL3gVL?WiJaIcb]FG6@ck1
+Z25 VeaW>@>NePgRFDn3JMEIdd3
+R3
+R4
+R15
+R16
+Z26 L0 354
+R7
+r1
+31
+R17
+R18
+R19
+R9
+Z27 !s100 [IM9^a:nU]h`oDW>i@10B0
+!i10b 1
+!s85 0
+!s101 -O0
+vSEL6
+Z28 ICd59Ld45J1`Eg6oHRAlBl2
+Z29 V775OW89gkdQ1Aj4MczULT1
+R3
+Z30 w1509521566
+R5
+R6
+L0 31
+R7
+r1
+31
+R8
+R9
+Z31 n@s@e@l6
+!i10b 1
+Z32 !s100 L5;3HCc28m^KCXKOO_S^J2
+!s85 0
+Z33 !s108 1509521567.648000
+R12
+!s101 -O0
+vSEL6_vlg_check_tst
+!i10b 1
+Z34 !s100 gZ=9ZJ86_Kd>>K=ibC<HJ2
+Z35 I6=5IDO9XSePmo[X<?S3MC2
+Z36 V?@30DGOT_6`RFUO4QJOER0
+R3
+Z37 w1509521564
+R15
+R16
+L0 63
+R7
+r1
+!s85 0
+31
+Z38 !s108 1509521567.798000
+Z39 !s107 project3.vt|
+R19
+!s101 -O0
+R9
+Z40 n@s@e@l6_vlg_check_tst
+vSEL6_vlg_sample_tst
+!i10b 1
+Z41 !s100 86=X9RkeYQE67fgF>0PM:0
+Z42 IzWK`[B8bGLUY<o_nm<cZm2
+Z43 V8noK:K7<fKkH[kSc_mAbC2
+R3
+R37
+R15
+R16
+L0 29
+R7
+r1
+!s85 0
+31
+R38
+R39
+R19
+!s101 -O0
+R9
+Z44 n@s@e@l6_vlg_sample_tst
+vSEL6_vlg_vec_tst
+!i10b 1
+!s100 `2OAG@4eE3UYJ`6GGll9b3
+IeLWPLWI8QDkehHJkaXFKC0
+Z45 VzA[<L=z5WNXVQ2<_1X5b81
+R3
+R37
+R15
+R16
+Z46 L0 211
+R7
+r1
+!s85 0
+31
+R38
+R39
+R19
+!s101 -O0
+R9
+Z47 n@s@e@l6_vlg_vec_tst

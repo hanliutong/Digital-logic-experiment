@@ -1,0 +1,267 @@
+$comment
+	File created using the following command:
+		vcd file led.msim.vcd -direction
+$end
+$date
+	Thu Oct 19 16:13:41 2017
+$end
+$version
+	ModelSim Version 10.1d
+$end
+$timescale
+	1ps
+$end
+$scope module led_vlg_vec_tst $end
+$var reg 4 ! data [3:0] $end
+$var wire 1 " a $end
+$var wire 1 # b $end
+$var wire 1 $ c $end
+$var wire 1 % d $end
+$var wire 1 & e $end
+$var wire 1 ' f $end
+$var wire 1 ( g $end
+$var wire 1 ) sel $end
+$var wire 1 * sampler $end
+$scope module i1 $end
+$var wire 1 + gnd $end
+$var wire 1 , vcc $end
+$var wire 1 - unknown $end
+$var tri1 1 . devclrn $end
+$var tri1 1 / devpor $end
+$var tri1 1 0 devoe $end
+$var wire 1 1 sel~output_o $end
+$var wire 1 2 a~output_o $end
+$var wire 1 3 b~output_o $end
+$var wire 1 4 c~output_o $end
+$var wire 1 5 d~output_o $end
+$var wire 1 6 e~output_o $end
+$var wire 1 7 f~output_o $end
+$var wire 1 8 g~output_o $end
+$var wire 1 9 data[0]~input_o $end
+$var wire 1 : data[2]~input_o $end
+$var wire 1 ; data[3]~input_o $end
+$var wire 1 < data[1]~input_o $end
+$var wire 1 = a~0_combout $end
+$var wire 1 > WideOr0~0_combout $end
+$var wire 1 ? WideOr1~0_combout $end
+$var wire 1 @ WideOr2~0_combout $end
+$var wire 1 A WideOr3~0_combout $end
+$var wire 1 B WideOr4~0_combout $end
+$var wire 1 C WideOr5~0_combout $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b0 !
+1"
+1#
+1$
+1%
+1&
+1'
+0(
+0)
+x*
+0+
+1,
+x-
+1.
+1/
+10
+01
+12
+13
+14
+15
+16
+17
+08
+09
+0:
+0;
+0<
+0=
+0>
+0?
+0@
+0A
+0B
+0C
+$end
+#125000
+b1 !
+19
+0*
+1B
+1A
+1@
+1=
+07
+06
+05
+02
+0'
+0&
+0%
+0"
+#250000
+b11 !
+b10 !
+09
+1<
+1*
+0A
+0@
+1?
+0=
+1C
+16
+15
+04
+12
+18
+1&
+1%
+0$
+1"
+1(
+#375000
+b11 !
+19
+0*
+1A
+0?
+06
+14
+0&
+1$
+#500000
+b111 !
+b101 !
+b100 !
+09
+0<
+1:
+1*
+0B
+1@
+1=
+17
+05
+02
+1'
+0%
+0"
+#625000
+b101 !
+19
+0*
+0@
+1>
+0=
+15
+03
+12
+1%
+0#
+1"
+#750000
+b111 !
+b110 !
+09
+1<
+1*
+0A
+16
+1&
+#875000
+b111 !
+19
+0*
+1B
+1A
+1@
+0>
+0C
+07
+06
+05
+13
+08
+0'
+0&
+0%
+1#
+0(
+#1000000
+b1111 !
+b1011 !
+b1001 !
+b1000 !
+09
+0<
+0:
+1;
+1*
+0B
+0A
+0@
+1C
+17
+16
+15
+18
+1'
+1&
+1%
+1(
+#1125000
+b1001 !
+19
+0*
+1A
+06
+0&
+#1250000
+b1011 !
+b1010 !
+09
+1<
+1*
+0A
+1?
+1>
+16
+04
+03
+1&
+0$
+0#
+#1375000
+b1011 !
+19
+0*
+#1500000
+b1111 !
+b1101 !
+b1100 !
+09
+0<
+1:
+1*
+#1625000
+b1101 !
+19
+0*
+#1750000
+b1111 !
+b1110 !
+09
+1<
+1*
+#1875000
+b1111 !
+19
+0*
+#2000000

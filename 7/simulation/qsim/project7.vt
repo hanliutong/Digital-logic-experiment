@@ -1,0 +1,293 @@
+// Copyright (C) 1991-2013 Altera Corporation
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, Altera MegaCore Function License 
+// Agreement, or other applicable license agreement, including, 
+// without limitation, that your use is for the sole purpose of 
+// programming logic devices manufactured by Altera and sold by 
+// Altera or its authorized distributors.  Please refer to the 
+// applicable agreement for further details.
+
+// *****************************************************************************
+// This file contains a Verilog test bench with test vectors .The test vectors  
+// are exported from a vector file in the Quartus Waveform Editor and apply to  
+// the top level entity of the current Quartus project .The user can use this   
+// testbench to simulate his design using a third-party simulation tool .       
+// *****************************************************************************
+// Generated on "11/19/2017 23:33:43"
+                                                                        
+// Verilog Self-Checking Test Bench (with test vectors) for design :    frequency_divider
+// 
+// Simulation tool : 3rd Party
+// 
+
+`timescale 1 ps/ 1 ps
+module frequency_divider_vlg_sample_tst(
+	clk_50MHz,
+	rst,
+	sampler_tx
+);
+input  clk_50MHz;
+input  rst;
+output sampler_tx;
+
+reg sample;
+time current_time;
+always @(clk_50MHz or rst)
+                                                                                
+begin                                                 
+ if ($realtime > 0)                                   
+ begin                                                
+	if ($realtime == 0 || $realtime != current_time)  
+	begin									          
+		if (sample === 1'bx)                          
+			sample = 0;                               
+		else                                          
+			sample = ~sample;                         
+	end										          
+	current_time = $realtime;					      
+ end                                                  
+end                                                   
+
+assign sampler_tx = sample;
+endmodule
+
+module frequency_divider_vlg_check_tst (
+	clk_1Hz,
+	clk_1KHz,
+	clk_10Hz,
+	clk_100Hz,
+	sampler_rx
+);
+input  clk_1Hz;
+input  clk_1KHz;
+input  clk_10Hz;
+input  clk_100Hz;
+input sampler_rx;
+
+reg  clk_1Hz_expected;
+reg  clk_1KHz_expected;
+reg  clk_10Hz_expected;
+reg  clk_100Hz_expected;
+
+reg  clk_1Hz_prev;
+reg  clk_1KHz_prev;
+reg  clk_10Hz_prev;
+reg  clk_100Hz_prev;
+
+reg  clk_1Hz_expected_prev;
+reg  clk_1KHz_expected_prev;
+reg  clk_10Hz_expected_prev;
+reg  clk_100Hz_expected_prev;
+
+reg  last_clk_1Hz_exp;
+reg  last_clk_1KHz_exp;
+reg  last_clk_10Hz_exp;
+reg  last_clk_100Hz_exp;
+
+reg trigger;
+
+integer i;
+integer nummismatches;
+
+reg [1:4] on_first_change ;
+
+
+initial
+begin
+trigger = 0;
+i = 0;
+nummismatches = 0;
+on_first_change = 4'b1;
+end
+
+// update real /o prevs
+
+always @(trigger)
+begin
+	clk_1Hz_prev = clk_1Hz;
+	clk_1KHz_prev = clk_1KHz;
+	clk_10Hz_prev = clk_10Hz;
+	clk_100Hz_prev = clk_100Hz;
+end
+
+// update expected /o prevs
+
+always @(trigger)
+begin
+	clk_1Hz_expected_prev = clk_1Hz_expected;
+	clk_1KHz_expected_prev = clk_1KHz_expected;
+	clk_10Hz_expected_prev = clk_10Hz_expected;
+	clk_100Hz_expected_prev = clk_100Hz_expected;
+end
+
+
+
+// expected clk_1Hz
+initial
+begin
+	clk_1Hz_expected = 1'bX;
+	clk_1Hz_expected = #999000 1'b0;
+end 
+
+// expected clk_10Hz
+initial
+begin
+	clk_10Hz_expected = 1'bX;
+	clk_10Hz_expected = #999000 1'b0;
+end 
+
+// expected clk_100Hz
+initial
+begin
+	clk_100Hz_expected = 1'bX;
+	clk_100Hz_expected = #999000 1'b0;
+end 
+
+// expected clk_1KHz
+initial
+begin
+	clk_1KHz_expected = 1'bX;
+	clk_1KHz_expected = #999000 1'b0;
+end 
+// generate trigger
+always @(clk_1Hz_expected or clk_1Hz or clk_1KHz_expected or clk_1KHz or clk_10Hz_expected or clk_10Hz or clk_100Hz_expected or clk_100Hz)
+begin
+	trigger <= ~trigger;
+end
+
+always @(posedge sampler_rx or negedge sampler_rx)
+begin
+`ifdef debug_tbench
+	$display("Scanning pattern %d @time = %t",i,$realtime );
+	i = i + 1;
+	$display("| expected clk_1Hz = %b | expected clk_1KHz = %b | expected clk_10Hz = %b | expected clk_100Hz = %b | ",clk_1Hz_expected_prev,clk_1KHz_expected_prev,clk_10Hz_expected_prev,clk_100Hz_expected_prev);
+	$display("| real clk_1Hz = %b | real clk_1KHz = %b | real clk_10Hz = %b | real clk_100Hz = %b | ",clk_1Hz_prev,clk_1KHz_prev,clk_10Hz_prev,clk_100Hz_prev);
+`endif
+	if (
+		( clk_1Hz_expected_prev !== 1'bx ) && ( clk_1Hz_prev !== clk_1Hz_expected_prev )
+		&& ((clk_1Hz_expected_prev !== last_clk_1Hz_exp) ||
+			on_first_change[1])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port clk_1Hz :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", clk_1Hz_expected_prev);
+		$display ("     Real value = %b", clk_1Hz_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[1] = 1'b0;
+		last_clk_1Hz_exp = clk_1Hz_expected_prev;
+	end
+	if (
+		( clk_1KHz_expected_prev !== 1'bx ) && ( clk_1KHz_prev !== clk_1KHz_expected_prev )
+		&& ((clk_1KHz_expected_prev !== last_clk_1KHz_exp) ||
+			on_first_change[2])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port clk_1KHz :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", clk_1KHz_expected_prev);
+		$display ("     Real value = %b", clk_1KHz_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[2] = 1'b0;
+		last_clk_1KHz_exp = clk_1KHz_expected_prev;
+	end
+	if (
+		( clk_10Hz_expected_prev !== 1'bx ) && ( clk_10Hz_prev !== clk_10Hz_expected_prev )
+		&& ((clk_10Hz_expected_prev !== last_clk_10Hz_exp) ||
+			on_first_change[3])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port clk_10Hz :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", clk_10Hz_expected_prev);
+		$display ("     Real value = %b", clk_10Hz_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[3] = 1'b0;
+		last_clk_10Hz_exp = clk_10Hz_expected_prev;
+	end
+	if (
+		( clk_100Hz_expected_prev !== 1'bx ) && ( clk_100Hz_prev !== clk_100Hz_expected_prev )
+		&& ((clk_100Hz_expected_prev !== last_clk_100Hz_exp) ||
+			on_first_change[4])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port clk_100Hz :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", clk_100Hz_expected_prev);
+		$display ("     Real value = %b", clk_100Hz_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[4] = 1'b0;
+		last_clk_100Hz_exp = clk_100Hz_expected_prev;
+	end
+
+	trigger <= ~trigger;
+end
+initial 
+
+begin 
+$timeformat(-12,3," ps",6);
+#2000000;
+if (nummismatches > 0)
+	$display ("%d mismatched vectors : Simulation failed !",nummismatches);
+else
+	$display ("Simulation passed !");
+$finish;
+end 
+endmodule
+
+module frequency_divider_vlg_vec_tst();
+// constants                                           
+// general purpose registers
+reg clk_50MHz;
+reg rst;
+// wires                                               
+wire clk_1Hz;
+wire clk_1KHz;
+wire clk_10Hz;
+wire clk_100Hz;
+
+wire sampler;                             
+
+// assign statements (if any)                          
+frequency_divider i1 (
+// port map - connection between master ports and signals/registers   
+	.clk_1Hz(clk_1Hz),
+	.clk_1KHz(clk_1KHz),
+	.clk_10Hz(clk_10Hz),
+	.clk_50MHz(clk_50MHz),
+	.clk_100Hz(clk_100Hz),
+	.rst(rst)
+);
+
+// clk_50MHz
+always
+begin
+	clk_50MHz = 1'b0;
+	clk_50MHz = #20000 1'b1;
+	#20000;
+end 
+
+// rst
+initial
+begin
+	rst = 1'b1;
+	rst = #1090000 1'b0;
+	rst = #70000 1'b1;
+end 
+
+frequency_divider_vlg_sample_tst tb_sample (
+	.clk_50MHz(clk_50MHz),
+	.rst(rst),
+	.sampler_tx(sampler)
+);
+
+frequency_divider_vlg_check_tst tb_out(
+	.clk_1Hz(clk_1Hz),
+	.clk_1KHz(clk_1KHz),
+	.clk_10Hz(clk_10Hz),
+	.clk_100Hz(clk_100Hz),
+	.sampler_rx(sampler)
+);
+endmodule
+

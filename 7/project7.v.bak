@@ -1,0 +1,8 @@
+module project7(clk_50MHz,rst,clk_1KHz,clk_100Hz,clk_10Hz,clk_1Hz);
+input clk_50MHz,rst,reset,SW;
+output reg clk_1KHz,clk_100Hz,clk_10Hz;
+output reg [7:0]sel
+wire clk_pj5
+frequency_divider(clk_50MHz,rst,clk_1KHz,clk_100Hz,clk_10Hz,clk_pj5);
+project5(clk_pj5,SW,reset,sel);
+endmodule

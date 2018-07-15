@@ -1,0 +1,161 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\Hanliutong\OneDrive\Homework\Digital logic experiment\16071118\11_2\simulation\qsim
+vcount_B32
+Z1 !s100 z7>>W[8XmnU@1HKC5Vce93
+Z2 I253^^]nJik0P^>RJEzj8<1
+Z3 Vd?a2aXSHKEJNY1hD4RJX72
+Z4 dC:\Users\Hanliutong\OneDrive\Homework\Digital logic experiment\16071118\11_2\simulation\qsim
+Z5 w1514254542
+Z6 8project11_2.vo
+Z7 Fproject11_2.vo
+L0 31
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -work|work|project11_2.vo|
+Z10 o-work work -O0
+Z11 ncount_@b32
+!i10b 1
+!s85 0
+Z12 !s108 1514254544.822000
+Z13 !s107 project11_2.vo|
+!s101 -O0
+vcount_B32_vlg_check_tst
+!i10b 1
+Z14 !s100 lDGCGCPBn>X6K>:77R9Ch2
+Z15 IYGCbAZkge]4VJ:H^325>c1
+Z16 VCLIVL0Q@5lfLk=kk]6=@[0
+R4
+Z17 w1514254541
+Z18 8project11_2.vt
+Z19 Fproject11_2.vt
+L0 59
+R8
+r1
+!s85 0
+31
+Z20 !s108 1514254545.070000
+Z21 !s107 project11_2.vt|
+Z22 !s90 -work|work|project11_2.vt|
+!s101 -O0
+R10
+Z23 ncount_@b32_vlg_check_tst
+vcount_B32_vlg_sample_tst
+!i10b 1
+Z24 !s100 Y`[z];KY2T3?goE16=l143
+Z25 Idi0IRcB1Y:@QYD?5PfMLF0
+Z26 VYL5jezfIBbD>Md]NHgX0=1
+R4
+R17
+R18
+R19
+L0 29
+R8
+r1
+!s85 0
+31
+R20
+R21
+R22
+!s101 -O0
+R10
+Z27 ncount_@b32_vlg_sample_tst
+vcount_B32_vlg_vec_tst
+!i10b 1
+Z28 !s100 hZC`ggLE_K0UF[2lgV8ie3
+Z29 I^PY]om9kPkS^6MIZBI24Y0
+Z30 VFFch1LAj^C@Ja=dA_A;Zc1
+R4
+R17
+R18
+R19
+Z31 L0 207
+R8
+r1
+!s85 0
+31
+R20
+R21
+R22
+!s101 -O0
+R10
+Z32 ncount_@b32_vlg_vec_tst
+vkbd
+Z33 IIzgW6hZZ:5[Le0_nn?6ko3
+Z34 VADkgkkK:1Qe_^[AGdd<@m2
+R4
+Z35 w1512538777
+R6
+R7
+L0 31
+R8
+r1
+31
+R10
+Z36 !s100 lm40Y9hOig7L5`geg^XNQ0
+Z37 !s108 1512538779.919000
+R13
+R9
+!i10b 1
+!s85 0
+!s101 -O0
+vkbd_vlg_check_tst
+Z38 I=U]ZFYj=h_XI5X9@YUT_H2
+Z39 V3<jfLd44I76=L47;Yh4o[1
+R4
+Z40 w1512538776
+R18
+R19
+L0 59
+R8
+r1
+31
+Z41 !s108 1512538780.111000
+Z42 !s107 project11_2.vt|
+R22
+R10
+Z43 !s100 b;QHXimfFD=`keJ_X1QAo2
+!i10b 1
+!s85 0
+!s101 -O0
+vkbd_vlg_sample_tst
+Z44 ICe[GM;;?VTkFlo<OPRgaN1
+Z45 VWTNi=A2T2aH4Dn^:zKQGo2
+R4
+R40
+R18
+R19
+L0 29
+R8
+r1
+31
+R41
+R42
+R22
+R10
+Z46 !s100 0SV^NHBH[WY;:T1`METZB3
+!i10b 1
+!s85 0
+!s101 -O0
+vkbd_vlg_vec_tst
+Z47 I4EJ>Fo=kdz>N:GoB9?Cd]1
+Z48 VkcTCU2On:b[FEd_OeiHNX3
+R4
+R40
+R18
+R19
+Z49 L0 638
+R8
+r1
+31
+R41
+R42
+R22
+R10
+Z50 !s100 3PDCJPM>9Z=9fb@C5X8gm0
+!i10b 1
+!s85 0
+!s101 -O0

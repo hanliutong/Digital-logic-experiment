@@ -1,0 +1,101 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\hanli\OneDrive\Homework\Digital logic experiment\16071118\6\simulation\qsim
+v\38Counter 
+Z1 I9JlW<M^TY1S_T?3WcSMMg0
+Z2 V4^MEl?LH[klZ]JX>E4Y182
+Z3 dE:\6\simulation\qsim
+Z4 w1510591360
+Z5 8project6.vo
+Z6 Fproject6.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 !s90 -work|work|project6.vo|
+Z9 o-work work -O0
+Z10 n@13438@counter@040
+Z11 !s100 Ekk30`g[`VlmMODeAXfz@1
+Z12 !s108 1510591362.535000
+Z13 !s107 project6.vo|
+!i10b 1
+!s85 0
+!s101 -O0
+vproject6
+Z14 I@5n2SG1LJWnJNVWI@zk=d3
+Z15 VBzXF`O[ZW=Kmgnh]2afh>2
+R3
+Z16 w1510593705
+R5
+R6
+L0 31
+R7
+r1
+31
+R8
+R9
+!i10b 1
+Z17 !s100 X^adSm@D>fI4k;=8ONN730
+!s85 0
+Z18 !s108 1510593706.778000
+R13
+!s101 -O0
+vproject6_vlg_check_tst
+!i10b 1
+Z19 !s100 2dh4M>JU:XWnNLiIbQVV90
+Z20 IALe:8NEa@QnVe4MMkzaSi2
+Z21 VHe4V^:7QjmLY;54FL3<[P3
+R3
+Z22 w1510593703
+Z23 8project6.vt
+Z24 Fproject6.vt
+L0 59
+R7
+r1
+!s85 0
+31
+Z25 !s108 1510593707.033000
+Z26 !s107 project6.vt|
+Z27 !s90 -work|work|project6.vt|
+!s101 -O0
+R9
+vproject6_vlg_sample_tst
+!i10b 1
+Z28 !s100 fmd^oX`60P]@]Ag^ginVQ1
+Z29 IloR<j84GiXj6ULiIfo[IL0
+Z30 VlVgW<4Cd=EB5QK7]8A@<V1
+R3
+R22
+R23
+R24
+L0 29
+R7
+r1
+!s85 0
+31
+R25
+R26
+R27
+!s101 -O0
+R9
+vproject6_vlg_vec_tst
+!i10b 1
+Z31 !s100 JIoKJTAF90_FB<AD_:gb<3
+Z32 IIlDfCHP`ROUKV=h4B3GQ83
+Z33 Val3g[WYhkNgL2>Az@;>>:0
+R3
+R22
+R23
+R24
+Z34 L0 407
+R7
+r1
+!s85 0
+31
+R25
+R26
+R27
+!s101 -O0
+R9

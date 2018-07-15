@@ -1,0 +1,13 @@
+# do project9.do 
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module check_38
+# 
+# Top level modules:
+# 	check_38
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# vsim -L cycloneiii_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate -c -t 1ps -novopt work.check_38_vlg_vec_tst 
+# ** Error: (vsim-3170) Could not find 'C:/Users/Hanliutong/OneDrive/Homework/Digital logic experiment/16071118/9_1/simulation/qsim/work.check_38_vlg_vec_tst'.
+# 
+# Error loading design

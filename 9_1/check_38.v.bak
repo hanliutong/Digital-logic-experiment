@@ -1,0 +1,20 @@
+module project9(clk,din,F);
+input clk,din;
+output reg F;
+reg [3:0]state;
+parameter s1=1,s2=2,s3=3,s4=4,s5=5,s6=6,s7=7,s8=8;
+always @ (posedge clk)
+	begin
+		case (state)
+		s1:begin F=0;if (din==0) state<=s2;else state<=s1; end
+		s2:begin F=0;if (din==0) state<=s3;else state<=s1; end
+		s3:begin F=0;if (din==1) state<=s4;else state<=s2; end
+		s4:begin F=0;if (din==1) state<=s5;else state<=s2; end
+		s5:begin F=0;if (din==1) state<=s6;else state<=s2; end
+		s6:begin F=0;if (din==0) state<=s7;else state<=s1; end
+		s7:begin F=0;if (din==0) begin F=1; state<=s8;end else state<=s1; end
+		s8:begin F=0;if (din==0)  state<=s2; else state<=s1; end
+		default:begin state<=s1; F=0;end
+	endcase
+	end
+endmodule

@@ -1,0 +1,173 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'frequency_divider:inst4|clk_100Hz'
+Slack : -4.180
+TNS   : -43.149
+
+Type  : Slow 1200mV 85C Model Setup 'frequency_divider:inst4|clk_1KHz'
+Slack : -4.156
+TNS   : -181.942
+
+Type  : Slow 1200mV 85C Model Setup 'CLK_50MHz'
+Slack : -4.017
+TNS   : -233.096
+
+Type  : Slow 1200mV 85C Model Setup 'keyboard_shake:inst8|state.S3'
+Slack : -2.934
+TNS   : -87.866
+
+Type  : Slow 1200mV 85C Model Hold 'CLK_50MHz'
+Slack : -0.199
+TNS   : -0.199
+
+Type  : Slow 1200mV 85C Model Hold 'frequency_divider:inst4|clk_100Hz'
+Slack : 0.449
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'frequency_divider:inst4|clk_1KHz'
+Slack : 0.450
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'keyboard_shake:inst8|state.S3'
+Slack : 0.450
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Recovery 'frequency_divider:inst4|clk_1KHz'
+Slack : -0.622
+TNS   : -2.488
+
+Type  : Slow 1200mV 85C Model Removal 'frequency_divider:inst4|clk_1KHz'
+Slack : 1.100
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CLK_50MHz'
+Slack : -3.000
+TNS   : -101.142
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'frequency_divider:inst4|clk_1KHz'
+Slack : -1.487
+TNS   : -77.324
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'keyboard_shake:inst8|state.S3'
+Slack : -1.487
+TNS   : -53.532
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'frequency_divider:inst4|clk_100Hz'
+Slack : -1.487
+TNS   : -47.584
+
+Type  : Slow 1200mV 0C Model Setup 'frequency_divider:inst4|clk_100Hz'
+Slack : -3.859
+TNS   : -38.717
+
+Type  : Slow 1200mV 0C Model Setup 'frequency_divider:inst4|clk_1KHz'
+Slack : -3.845
+TNS   : -166.924
+
+Type  : Slow 1200mV 0C Model Setup 'CLK_50MHz'
+Slack : -3.709
+TNS   : -214.666
+
+Type  : Slow 1200mV 0C Model Setup 'keyboard_shake:inst8|state.S3'
+Slack : -2.693
+TNS   : -80.318
+
+Type  : Slow 1200mV 0C Model Hold 'CLK_50MHz'
+Slack : -0.160
+TNS   : -0.160
+
+Type  : Slow 1200mV 0C Model Hold 'frequency_divider:inst4|clk_100Hz'
+Slack : 0.397
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'frequency_divider:inst4|clk_1KHz'
+Slack : 0.397
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'keyboard_shake:inst8|state.S3'
+Slack : 0.399
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Recovery 'frequency_divider:inst4|clk_1KHz'
+Slack : -0.469
+TNS   : -1.876
+
+Type  : Slow 1200mV 0C Model Removal 'frequency_divider:inst4|clk_1KHz'
+Slack : 1.003
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CLK_50MHz'
+Slack : -3.000
+TNS   : -101.142
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'frequency_divider:inst4|clk_1KHz'
+Slack : -1.487
+TNS   : -77.324
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'keyboard_shake:inst8|state.S3'
+Slack : -1.487
+TNS   : -53.532
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'frequency_divider:inst4|clk_100Hz'
+Slack : -1.487
+TNS   : -47.602
+
+Type  : Fast 1200mV 0C Model Setup 'CLK_50MHz'
+Slack : -1.161
+TNS   : -58.014
+
+Type  : Fast 1200mV 0C Model Setup 'frequency_divider:inst4|clk_100Hz'
+Slack : -1.128
+TNS   : -5.805
+
+Type  : Fast 1200mV 0C Model Setup 'frequency_divider:inst4|clk_1KHz'
+Slack : -1.117
+TNS   : -47.181
+
+Type  : Fast 1200mV 0C Model Setup 'keyboard_shake:inst8|state.S3'
+Slack : -0.715
+TNS   : -17.971
+
+Type  : Fast 1200mV 0C Model Hold 'CLK_50MHz'
+Slack : -0.307
+TNS   : -0.443
+
+Type  : Fast 1200mV 0C Model Hold 'frequency_divider:inst4|clk_100Hz'
+Slack : 0.185
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'frequency_divider:inst4|clk_1KHz'
+Slack : 0.185
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'keyboard_shake:inst8|state.S3'
+Slack : 0.185
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'frequency_divider:inst4|clk_1KHz'
+Slack : 0.275
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'frequency_divider:inst4|clk_1KHz'
+Slack : 0.479
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CLK_50MHz'
+Slack : -3.000
+TNS   : -72.761
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'frequency_divider:inst4|clk_1KHz'
+Slack : -1.000
+TNS   : -52.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'keyboard_shake:inst8|state.S3'
+Slack : -1.000
+TNS   : -36.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'frequency_divider:inst4|clk_100Hz'
+Slack : -1.000
+TNS   : -32.000
+
+------------------------------------------------------------

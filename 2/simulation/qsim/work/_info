@@ -1,0 +1,81 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\Hanliutong\OneDrive\Homework\Digital logic experiment\2\simulation\qsim
+vled
+Z1 !s100 7KA6eR2:WU;@2G1S??eo<3
+Z2 IfWzdUkBMM]f9KlK@JSn[10
+Z3 VeTiemIK`R4SA93RlCIKcd1
+Z4 dD:\16071118\2\simulation\qsim
+Z5 w1508400820
+Z6 8led.vo
+Z7 Fled.vo
+L0 31
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -work|work|led.vo|
+Z10 o-work work -O0
+!i10b 1
+!s85 0
+Z11 !s108 1508400821.398000
+Z12 !s107 led.vo|
+!s101 -O0
+vled_vlg_check_tst
+!i10b 1
+Z13 !s100 i9>]@UIWFDocfoB5B^=8O2
+Z14 Izo0FzI0A<f9bmdab4h1J40
+Z15 VM5<jVD07eK6^zX7bhY]IY1
+R4
+Z16 w1508400819
+Z17 8led.vt
+Z18 Fled.vt
+L0 57
+R8
+r1
+!s85 0
+31
+Z19 !s108 1508400821.554000
+Z20 !s107 led.vt|
+Z21 !s90 -work|work|led.vt|
+!s101 -O0
+R10
+vled_vlg_sample_tst
+!i10b 1
+Z22 !s100 0lb9Qe9Y;1UJkclT`:R6S0
+Z23 IG0zQzH@@TkbP91V39U1Im0
+Z24 Vc3iYmo76eiCc<`M`]TH_03
+R4
+R16
+R17
+R18
+L0 29
+R8
+r1
+!s85 0
+31
+R19
+R20
+R21
+!s101 -O0
+R10
+vled_vlg_vec_tst
+!i10b 1
+Z25 !s100 k2a^V2m2aSHNbMaIN@9<Z3
+Z26 I4ggczK8@>^EQW?`TVMi<<0
+Z27 Vdm8lbF5f_UlGb1KcfG3C@0
+R4
+R16
+R17
+R18
+Z28 L0 349
+R8
+r1
+!s85 0
+31
+R19
+R20
+R21
+!s101 -O0
+R10

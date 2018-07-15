@@ -1,0 +1,157 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\Hanliutong\OneDrive\Homework\Digital logic experiment\16071118\7\simulation\qsim
+vfrequency_divider
+Z1 !s100 PQh7g]5UR`7QfkClG_i032
+Z2 IRHM]F<Ja8nOeUhZCLQ5]b2
+Z3 V2QI9RRI?Zkf;REj600aoh3
+Z4 dC:\Users\Hanliutong\OneDrive\Homework\Digital logic experiment\16071118\7\simulation\qsim
+Z5 w1511105625
+Z6 8project7.vo
+Z7 Fproject7.vo
+L0 31
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -work|work|project7.vo|
+Z10 o-work work -O0
+!i10b 1
+!s85 0
+Z11 !s108 1511105627.043000
+Z12 !s107 project7.vo|
+!s101 -O0
+vfrequency_divider_vlg_check_tst
+!i10b 1
+Z13 !s100 fm`BD<Q:V`R__jS4WCHGS1
+Z14 I3VoXmY3;_0]Vg_<K:QB1a2
+Z15 V_>?kBRYd7oY:jKVm:Bb<B0
+R4
+Z16 w1511105623
+Z17 8project7.vt
+Z18 Fproject7.vt
+L0 59
+R8
+r1
+!s85 0
+31
+Z19 !s108 1511105627.305000
+Z20 !s107 project7.vt|
+Z21 !s90 -work|work|project7.vt|
+!s101 -O0
+R10
+vfrequency_divider_vlg_sample_tst
+!i10b 1
+Z22 !s100 OQ8RA1iaUCWKU8B7fIW]K1
+Z23 I^m7@BZC>;UM^7d>]S3R193
+Z24 VU:F<XK:4WR0=IMFYPBa5A3
+R4
+R16
+R17
+R18
+L0 29
+R8
+r1
+!s85 0
+31
+R19
+R20
+R21
+!s101 -O0
+R10
+vfrequency_divider_vlg_vec_tst
+!i10b 1
+Z25 !s100 Q7Fg79e6@_anLN:>z1Uak2
+Z26 In<kReT_KCOALZoV53@Rl_0
+Z27 V[YC]6l^Em9J3W1<=;=j?I3
+R4
+R16
+R17
+R18
+Z28 L0 239
+R8
+r1
+!s85 0
+31
+R19
+R20
+R21
+!s101 -O0
+R10
+vproject7
+Z29 IOE<A1imfe3JW:][69SmO?1
+Z30 VWei0694WizIc[k7iJE[8?1
+R4
+Z31 w1511105470
+R6
+R7
+L0 31
+R8
+r1
+31
+R9
+R10
+Z32 !s100 oXYnbIm2`2hD>G7XGk2Fe3
+Z33 !s108 1511105471.962000
+R12
+!i10b 1
+!s85 0
+!s101 -O0
+vproject7_vlg_check_tst
+Z34 !s100 DzXlc7E6Ab859@`dO>OU73
+Z35 IPhYTK_gNi6O7M53LX_=fS3
+Z36 Ve`8[HJIj;WGCaJ28;XB3V3
+R4
+Z37 w1511105469
+R17
+R18
+L0 63
+R8
+r1
+31
+Z38 !s108 1511105472.246000
+Z39 !s107 project7.vt|
+R21
+R10
+!i10b 1
+!s85 0
+!s101 -O0
+vproject7_vlg_sample_tst
+Z40 !s100 UEz5`FUKO]I5kR9533KUM1
+Z41 Ig_^B[gh?fVomFQ7b<[E`b3
+Z42 VCc?8Vmm9OiWi>^Yd@cbj;0
+R4
+R37
+R17
+R18
+L0 29
+R8
+r1
+31
+R38
+R39
+R21
+R10
+!i10b 1
+!s85 0
+!s101 -O0
+vproject7_vlg_vec_tst
+Z43 !s100 40iWI4Z@D@lK^dS`daB:b0
+Z44 I;zkJ>6SA6ZCPbA2Q[Sj<E2
+Z45 VfLig>j=;3UaizAhSNVm1_2
+R4
+R37
+R17
+R18
+Z46 L0 364
+R8
+r1
+31
+R38
+R39
+R21
+R10
+!i10b 1
+!s85 0
+!s101 -O0

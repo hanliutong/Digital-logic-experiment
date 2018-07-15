@@ -1,0 +1,20 @@
+
+State Machine - |project11_2|shifting_register:inst28|Mode
+Name Mode.00 Mode.10 Mode.01 
+Mode.00 0 0 0 
+Mode.01 1 0 1 
+Mode.10 1 1 0 
+
+State Machine - |project11_2|kbd:inst5|state
+Name state.S3 state.S2 state.S1 state.S0 
+state.S0 0 0 0 0 
+state.S1 0 0 1 1 
+state.S2 0 1 0 1 
+state.S3 1 0 0 1 
+
+State Machine - |project11_2|keyboard_shake:inst8|state
+Name state.S3 state.S2 state.S1 state.S0 
+state.S0 0 0 0 0 
+state.S1 0 0 1 1 
+state.S2 0 1 0 1 
+state.S3 1 0 0 1 

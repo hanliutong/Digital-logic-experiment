@@ -1,0 +1,10 @@
+module KS8 (clk,SW_IN,SW_OUT);
+input clk;
+input [1:0]SW_IN;
+output reg [1:0]SW_OUT;
+always @ (posedge clk)
+begin
+	keyboard_shake(clk,SW_IN[0],SW_OUT[0]);
+	keyboard_shake(clk,SW_IN[1],SW_OUT[1]);
+end
+endmodule

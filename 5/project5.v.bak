@@ -1,0 +1,22 @@
+module project5(clk,sel);
+input clk
+output reg [7:0]sel,S0
+reg [7:0]S1,S2,S3,S4,S5,S6,S7;
+parameter S0=1111_1111,S1=0111_1111,S2=1011_1111,S3=1101_1111,
+S4=1110_1111,S5=1111_0111,S6=1111_1011,S7=1111_1101,S8=1111_1110;
+sel=S0;
+always @ (posedge clk)
+	begin
+	case(sel)
+	S0:sel=S1;
+	S1:sel=S2;
+	S2:sel=S3;
+	S3:sel=S4;
+	S4:sel=S5;
+	S5:sel=S6;
+	S6:sel=S7;
+	S7:sel=S8;
+	S8:sel=S0;
+	endcase
+	end
+endmodule

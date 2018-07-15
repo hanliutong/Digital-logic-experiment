@@ -1,0 +1,100 @@
+// Copyright (C) 1991-2013 Altera Corporation
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, Altera MegaCore Function License 
+// Agreement, or other applicable license agreement, including, 
+// without limitation, that your use is for the sole purpose of 
+// programming logic devices manufactured by Altera and sold by 
+// Altera or its authorized distributors.  Please refer to the 
+// applicable agreement for further details.
+
+// VENDOR "Altera"
+// PROGRAM "Quartus II 64-Bit"
+// VERSION "Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version"
+
+// DATE "11/15/2017 15:54:59"
+
+// 
+// Device: Altera EP3C55F484C8 Package FBGA484
+// 
+
+// 
+// This Verilog file should be used for ModelSim-Altera (Verilog) only
+// 
+
+`timescale 1 ps/ 1 ps
+
+module keyboard_shake (
+	clk,
+	SW_IN,
+	SW_OUT);
+input 	clk;
+input 	SW_IN;
+output 	SW_OUT;
+
+// Design Ports Information
+// clk	=>  Location: PIN_J20,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// SW_IN	=>  Location: PIN_F20,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// SW_OUT	=>  Location: PIN_B2,	 I/O Standard: 2.5 V,	 Current Strength: Default
+
+
+wire gnd;
+wire vcc;
+wire unknown;
+
+assign gnd = 1'b0;
+assign vcc = 1'b1;
+assign unknown = 1'bx;
+
+tri1 devclrn;
+tri1 devpor;
+tri1 devoe;
+// synopsys translate_off
+initial $sdf_annotate("project9_min_1200mv_0c_v_fast.sdo");
+// synopsys translate_on
+
+wire \clk~input_o ;
+wire \SW_IN~input_o ;
+wire \SW_OUT~output_o ;
+
+
+// Location: IOOBUF_X0_Y48_N2
+cycloneiii_io_obuf \SW_OUT~output (
+	.i(gnd),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\SW_OUT~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \SW_OUT~output .bus_hold = "false";
+defparam \SW_OUT~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOIBUF_X77_Y38_N15
+cycloneiii_io_ibuf \clk~input (
+	.i(clk),
+	.ibar(gnd),
+	.o(\clk~input_o ));
+// synopsys translate_off
+defparam \clk~input .bus_hold = "false";
+defparam \clk~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X77_Y45_N22
+cycloneiii_io_ibuf \SW_IN~input (
+	.i(SW_IN),
+	.ibar(gnd),
+	.o(\SW_IN~input_o ));
+// synopsys translate_off
+defparam \SW_IN~input .bus_hold = "false";
+defparam \SW_IN~input .simulate_z_as = "z";
+// synopsys translate_on
+
+assign SW_OUT = \SW_OUT~output_o ;
+
+endmodule

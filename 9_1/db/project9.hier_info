@@ -1,0 +1,30 @@
+|check_38
+clk => state[0]~reg0.CLK
+clk => state[1]~reg0.CLK
+clk => state[2]~reg0.CLK
+clk => state[3]~reg0.CLK
+din => Mux3.IN13
+din => Mux1.IN13
+din => Mux1.IN14
+din => Mux3.IN14
+din => Mux1.IN15
+din => Mux3.IN15
+din => state~0.OUTPUTSELECT
+din => state~1.OUTPUTSELECT
+din => state~2.OUTPUTSELECT
+din => state~3.OUTPUTSELECT
+din => always1~0.IN1
+din => Mux0.IN14
+din => Mux1.IN11
+din => Mux2.IN10
+din => Mux2.IN11
+din => Mux2.IN12
+din => Mux2.IN13
+din => Mux2.IN14
+F <= always1~0.DB_MAX_OUTPUT_PORT_TYPE
+state[0] <= state[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+state[1] <= state[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+state[2] <= state[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+state[3] <= state[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

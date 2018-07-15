@@ -1,0 +1,121 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 1991-2013 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus II 64-Bit
+# Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
+# Date created = 15:20:45  December 04, 2017
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		project11_2_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus II software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Cyclone III"
+set_global_assignment -name DEVICE EP3C55F484C8
+set_global_assignment -name TOP_LEVEL_ENTITY project11_2
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION "13.0 SP1"
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "15:20:45  DECEMBER 04, 2017"
+set_global_assignment -name LAST_QUARTUS_VERSION "13.0 SP1"
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "2.5 V"
+set_location_assignment PIN_T1 -to CLK_50MHz
+set_location_assignment PIN_AB20 -to ds1
+set_location_assignment PIN_Y21 -to ds2
+set_location_assignment PIN_Y22 -to ds3
+set_location_assignment PIN_W22 -to ds4
+set_location_assignment PIN_V22 -to ds5
+set_location_assignment PIN_U22 -to ds6
+set_location_assignment PIN_AA17 -to ds7
+set_location_assignment PIN_V16 -to ds8
+set_location_assignment PIN_AA20 -to led_a
+set_location_assignment PIN_W20 -to led_b
+set_location_assignment PIN_R21 -to led_c
+set_location_assignment PIN_P21 -to led_d
+set_location_assignment PIN_N21 -to led_e
+set_location_assignment PIN_N20 -to led_f
+set_location_assignment PIN_M21 -to led_g
+set_location_assignment PIN_B10 -to SWC0
+set_location_assignment PIN_D10 -to SWC1
+set_location_assignment PIN_F9 -to SWC2
+set_location_assignment PIN_A13 -to SWC3
+set_location_assignment PIN_A14 -to SWR0
+set_location_assignment PIN_A15 -to SWR1
+set_location_assignment PIN_A16 -to SWR2
+set_location_assignment PIN_C4 -to SWR3
+set_global_assignment -name USE_CONFIGURATION_DEVICE OFF
+set_global_assignment -name CRC_ERROR_OPEN_DRAIN OFF
+set_global_assignment -name RESERVE_ALL_UNUSED_PINS_WEAK_PULLUP "AS INPUT TRI-STATED"
+set_global_assignment -name OUTPUT_IO_TIMING_NEAR_END_VMEAS "HALF VCCIO" -rise
+set_global_assignment -name OUTPUT_IO_TIMING_NEAR_END_VMEAS "HALF VCCIO" -fall
+set_global_assignment -name OUTPUT_IO_TIMING_FAR_END_VMEAS "HALF SIGNAL SWING" -rise
+set_global_assignment -name OUTPUT_IO_TIMING_FAR_END_VMEAS "HALF SIGNAL SWING" -fall
+set_location_assignment PIN_B9 -to LED16[15]
+set_location_assignment PIN_B8 -to LED16[14]
+set_location_assignment PIN_B7 -to LED16[13]
+set_location_assignment PIN_E14 -to LED16[12]
+set_location_assignment PIN_C15 -to LED16[11]
+set_location_assignment PIN_F11 -to LED16[10]
+set_location_assignment PIN_C13 -to LED16[9]
+set_location_assignment PIN_E11 -to LED16[8]
+set_location_assignment PIN_T17 -to LED16[7]
+set_location_assignment PIN_R16 -to LED16[6]
+set_location_assignment PIN_Y17 -to LED16[5]
+set_location_assignment PIN_W15 -to LED16[4]
+set_location_assignment PIN_W13 -to LED16[3]
+set_location_assignment PIN_V15 -to LED16[2]
+set_location_assignment PIN_V12 -to LED16[1]
+set_location_assignment PIN_U12 -to LED16[0]
+set_location_assignment PIN_N18 -to Mode[1]
+set_location_assignment PIN_M20 -to Mode[0]
+set_global_assignment -name VERILOG_FILE shifting_register_2.v
+set_global_assignment -name BDF_FILE dynamic_scanning.bdf
+set_global_assignment -name VERILOG_FILE shifting_register.v
+set_global_assignment -name VERILOG_FILE SEL8.v
+set_global_assignment -name VERILOG_FILE led.v
+set_global_assignment -name VERILOG_FILE keyboard_shake.v
+set_global_assignment -name VERILOG_FILE kbd.v
+set_global_assignment -name VERILOG_FILE frequency_divider.v
+set_global_assignment -name VERILOG_FILE adder8.v
+set_global_assignment -name BDF_FILE project11_2.bdf
+set_location_assignment PIN_M19 -to pin_name1
+set_global_assignment -name SIMULATION_MODE FUNCTIONAL
+set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (Verilog)"
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda_simulation
+set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST ON -section_id eda_simulation
+set_global_assignment -name VERILOG_FILE count_B32.v
+set_global_assignment -name VECTOR_WAVEFORM_FILE "Waveform for cnt.vwf"
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "C:/Users/Hanliutong/OneDrive/Homework/Digital logic experiment/16071118/11_2/Waveform for cnt.vwf"
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform.vwf
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

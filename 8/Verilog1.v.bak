@@ -1,0 +1,6 @@
+module test_CP (Clk,F,F_C)
+input Clk,F;
+output reg F_C;
+always @(Clk or F)
+F_C= ((Clk&(!Mode[0]))&((Clk)&(!Mode[0]))&(F&Mode[1]&Mode[0]));
+endmodule

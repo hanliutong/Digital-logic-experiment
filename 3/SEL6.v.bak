@@ -1,0 +1,30 @@
+module SEL6 (in5,in6,sel_in,EN,out);
+	input EN;
+	input [3:0]in5,in6;
+	input [2:0]sel_in;
+	output out;
+	reg [3:0]out;
+	parameter in1 =4'b0001;
+	parameter in2 =4'b0110;
+	parameter in3 =4'b0000;
+	parameter in4 =4'b0111;
+		always @ (in1 or in2 or in3 or in4 or in5 or in6 or sel_in or EN)
+			begin
+			if (EN==0)
+				begin
+					case (sel_in)
+					3'b000:out=in1;
+					3'b001:out=in2;
+					3'b010:out=in3;
+					3'b011:out=in4;
+					3'b100:out=in5;
+					3'b101:out=in6;
+					default:out=4'b0110;
+					endcase
+				end
+			else 
+			out = 4'bZ;
+			end
+endmodule
+					
+					

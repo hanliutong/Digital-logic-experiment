@@ -1,0 +1,13 @@
+module count_B32();
+input [3:0]Din;
+output reg [31:0]cnt;
+
+always (Din)
+begin
+	if (Din==4'b1111)	cnt=cnt-1'b1;
+	else if (Din==4'b1110) cnt=0;
+	else 	cnt=cnt+1'b1;
+end
+
+endmodule
+	

@@ -1,0 +1,47 @@
+# do led.do 
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module led
+# 
+# Top level modules:
+# 	led
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module led_vlg_sample_tst
+# -- Compiling module led_vlg_check_tst
+# -- Compiling module led_vlg_vec_tst
+# 
+# Top level modules:
+# 	led_vlg_vec_tst
+# vsim -L cycloneiii_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate -c -t 1ps -novopt work.led_vlg_vec_tst 
+# Loading work.led_vlg_vec_tst
+# Loading work.led
+# Loading cycloneiii_ver.cycloneiii_io_obuf
+# Loading cycloneiii_ver.cycloneiii_io_ibuf
+# Loading cycloneiii_ver.cycloneiii_lcell_comb
+# Loading work.led_vlg_sample_tst
+# Loading work.led_vlg_check_tst
+# ERROR! Vector Mismatch for output port a :: @time = 1000000.000 ps
+#      Expected value = 0
+#      Real value = 1
+# ERROR! Vector Mismatch for output port b :: @time = 1000000.000 ps
+#      Expected value = 0
+#      Real value = 1
+# ERROR! Vector Mismatch for output port c :: @time = 1000000.000 ps
+#      Expected value = 0
+#      Real value = 1
+# ERROR! Vector Mismatch for output port d :: @time = 1125000.000 ps
+#      Expected value = 0
+#      Real value = 1
+# ERROR! Vector Mismatch for output port e :: @time = 1125000.000 ps
+#      Expected value = 0
+#      Real value = 1
+# ERROR! Vector Mismatch for output port f :: @time = 1125000.000 ps
+#      Expected value = 0
+#      Real value = 1
+# ERROR! Vector Mismatch for output port g :: @time = 1125000.000 ps
+#      Expected value = 0
+#      Real value = 1
+#           7 mismatched vectors : Simulation failed !
+# ** Note: $finish    : led.vt(345)
+#    Time: 2 us  Iteration: 0  Instance: /led_vlg_vec_tst/tb_out

@@ -1,0 +1,2 @@
+Warning (10268): Verilog HDL information at shifting_register_2.v(10): always construct contains both blocking and non-blocking assignments
+Warning (10268): Verilog HDL information at shifting_register.v(7): always construct contains both blocking and non-blocking assignments

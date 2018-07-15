@@ -1,0 +1,15 @@
+module adder8 (in1,in2,in3,in4,in5,in6,in7,in8,cnt,Aen,clk);
+input in1,in2,in3,in4,in5,in6,in7,in8,clk;
+output reg [2..0]cnt;
+reg [2..0]sum;
+sum=(!in1)+(!in2)+(!in3)+(!in4)+(!in5)+(!in6)+(!in7)+(!in8);
+always @(posedge clk)
+if (Aen == 0)
+	begin
+	if (cnt<sum) cnt = cnt+1'b1;
+	else cnt = 0;
+	end
+else cnt = 0;
+endmodule
+
+	

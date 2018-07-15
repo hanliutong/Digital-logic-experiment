@@ -1,0 +1,176 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\Hanliutong\OneDrive\Homework\Digital logic experiment\16071118\10_3\simulation\qsim
+vadder8
+Z1 !s100 Lzk@F?0L1J;CRE=gineQL0
+Z2 I^7VJBj`MYDnL;inj`XUbJ0
+Z3 VbjGD^9cn[KljIl<iia8`o2
+Z4 dC:\Users\Hanliutong\OneDrive\Homework\Digital logic experiment\16071118\10_3\simulation\qsim
+Z5 w1511092841
+Z6 8chronograph.vo
+Z7 Fchronograph.vo
+L0 31
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -work|work|chronograph.vo|
+Z10 o-work work -O0
+Z11 !s108 1511092842.404000
+Z12 !s107 chronograph.vo|
+!i10b 1
+!s85 0
+!s101 -O0
+vadder8_vlg_check_tst
+Z13 !s100 da8IWRzXKO7<JUEjaH]hU2
+Z14 IgPnali?CdK:POUdnNVEXa0
+Z15 VzGWPo]ZWFmUUjUzkVa:KD3
+R4
+Z16 w1511092840
+Z17 8chronograph.vt
+Z18 Fchronograph.vt
+L0 75
+R8
+r1
+31
+Z19 !s108 1511092842.504000
+Z20 !s107 chronograph.vt|
+Z21 !s90 -work|work|chronograph.vt|
+R10
+!i10b 1
+!s85 0
+!s101 -O0
+vadder8_vlg_sample_tst
+Z22 !s100 49QLT=DR:?BoPH7WhzJ3z2
+Z23 IUMd@N[YEd55=nVPReTz613
+Z24 Vl^IJE[5X70E=S[kMMH;fm1
+R4
+R16
+R17
+R18
+L0 29
+R8
+r1
+31
+R19
+R20
+R21
+R10
+!i10b 1
+!s85 0
+!s101 -O0
+vadder8_vlg_vec_tst
+Z25 ID=;oN?nzFOhaPSlM_mz2i2
+Z26 VK_6_Qo:B3CANP2B>l;fUW2
+R4
+R16
+R17
+R18
+Z27 L0 205
+R8
+r1
+31
+R19
+R20
+R21
+R10
+Z28 !s100 5o]XhReGY]gAoilkC2[j`3
+!i10b 1
+!s85 0
+!s101 -O0
+vdynamic_scanning
+Z29 !s100 KWQ3N7c7g:bU`;Fh2`bL@0
+Z30 I@a:=JWfSd2<mGE;`N]i[i2
+Z31 VgAGg9Pz7g<Y3PR0AZkR8H1
+R4
+Z32 w1512568176
+R6
+R7
+L0 31
+R8
+r1
+31
+R9
+R10
+Z33 !s108 1512568178.480000
+R12
+!i10b 1
+!s85 0
+!s101 -O0
+vdynamic_scanning_vlg_check_tst
+Z34 !s100 e8ABDKIX6h?^II:diE5NM1
+Z35 I7c4Io8jCXZ[M8GcYTg@Ue0
+Z36 VhAa2LZZCb=DLz6h6cjTFd3
+R4
+Z37 w1512568175
+R17
+R18
+L0 57
+R8
+r1
+31
+Z38 !s108 1512568178.721000
+R20
+R21
+R10
+!i10b 1
+!s85 0
+!s101 -O0
+vdynamic_scanning_vlg_sample_tst
+Z39 !s100 9l7EJhRh0Vn7gQFR?CQCC1
+Z40 IPmMXNhHn7ah9MdiDM@?lY2
+Z41 VJ?3fFR5Aii?PgMO:<nGOf0
+R4
+R37
+R17
+R18
+L0 29
+R8
+r1
+31
+R38
+R20
+R21
+R10
+!i10b 1
+!s85 0
+!s101 -O0
+vdynamic_scanning_vlg_vec_tst
+Z42 !s100 Vf;zV4P]D`aki<hl25@B71
+Z43 IW0aS?9o=>`3F_8LPQ0WRD3
+Z44 VK6<YOmAH[?A0M8ZQFSVfS0
+R4
+R37
+R17
+R18
+Z45 L0 414
+R8
+r1
+31
+R38
+R20
+R21
+R10
+!i10b 1
+!s85 0
+!s101 -O0
+vregister_bank
+!i10b 1
+!s100 L6fOoLFok:4QM2E75MJN13
+I?T8lXKoWOo:icf23_dY232
+V]@D_ojoiQJESd8F>1]^Ho1
+R4
+w1514430147
+R6
+R7
+L0 31
+R8
+r1
+!s85 0
+31
+!s108 1514430149.540000
+!s107 chronograph.vo|
+R9
+!s101 -O0
+R10

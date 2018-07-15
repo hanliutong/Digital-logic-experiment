@@ -1,0 +1,11 @@
+
+State Machine - |project9|check_38:inst|state
+Name state.s7 state.s6 state.s5 state.s4 state.s3 state.s2 state.s1 state.s8 
+state.s1 0 0 0 0 0 0 0 0 
+state.s2 0 0 0 0 0 1 1 0 
+state.s3 0 0 0 0 1 0 1 0 
+state.s4 0 0 0 1 0 0 1 0 
+state.s5 0 0 1 0 0 0 1 0 
+state.s6 0 1 0 0 0 0 1 0 
+state.s7 1 0 0 0 0 0 1 0 
+state.s8 0 0 0 0 0 0 1 1 

@@ -1,0 +1,9 @@
+|keyboard_shake
+clk => state~3.DATAIN
+SW_IN => state.S0.DATAIN
+SW_IN => state.OUTPUTSELECT
+SW_IN => state.OUTPUTSELECT
+SW_IN => state.OUTPUTSELECT
+SW_OUT <= SW_OUT.DB_MAX_OUTPUT_PORT_TYPE
+
+

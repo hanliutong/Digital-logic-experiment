@@ -1,0 +1,424 @@
+Analysis & Synthesis report for project8
+Thu Nov 30 13:41:44 2017
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. State Machine - |project8|keyboard_shake:inst1|state
+  9. User-Specified and Inferred Latches
+ 10. Registers Removed During Synthesis
+ 11. General Register Statistics
+ 12. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 13. Parameter Settings for User Entity Instance: frequency_divider:inst7
+ 14. Parameter Settings for User Entity Instance: keyboard_shake:inst1
+ 15. Elapsed Time Per Partition
+ 16. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++---------------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                          ;
++------------------------------------+--------------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Thu Nov 30 13:41:44 2017            ;
+; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version ;
+; Revision Name                      ; project8                                         ;
+; Top-level Entity Name              ; project8                                         ;
+; Family                             ; Cyclone III                                      ;
+; Total logic elements               ; 218                                              ;
+;     Total combinational functions  ; 218                                              ;
+;     Dedicated logic registers      ; 138                                              ;
+; Total registers                    ; 138                                              ;
+; Total pins                         ; 24                                               ;
+; Total virtual pins                 ; 0                                                ;
+; Total memory bits                  ; 0                                                ;
+; Embedded Multiplier 9-bit elements ; 0                                                ;
+; Total PLLs                         ; 0                                                ;
++------------------------------------+--------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                        ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                     ; Setting            ; Default Value      ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                     ; EP3C55F484C8       ;                    ;
+; Top-level entity name                                                      ; project8           ; project8           ;
+; Family name                                                                ; Cyclone III        ; Cyclone IV GX      ;
+; Use smart compilation                                                      ; Off                ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                                ; Off                ; Off                ;
+; Restructure Multiplexers                                                   ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                                        ; Off                ; Off                ;
+; Preserve fewer node names                                                  ; On                 ; On                 ;
+; Disable OpenCore Plus hardware evaluation                                  ; Off                ; Off                ;
+; Verilog Version                                                            ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                               ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                   ; Auto               ; Auto               ;
+; Safe State Machine                                                         ; Off                ; Off                ;
+; Extract Verilog State Machines                                             ; On                 ; On                 ;
+; Extract VHDL State Machines                                                ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                          ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                 ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                             ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                  ; On                 ; On                 ;
+; Parallel Synthesis                                                         ; On                 ; On                 ;
+; DSP Block Balancing                                                        ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                         ; On                 ; On                 ;
+; Power-Up Don't Care                                                        ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                               ; Off                ; Off                ;
+; Remove Duplicate Registers                                                 ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                       ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                     ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                      ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                       ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                        ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                             ; Off                ; Off                ;
+; Optimization Technique                                                     ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                         ; 70                 ; 70                 ;
+; Auto Carry Chains                                                          ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                       ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                      ; Off                ; Off                ;
+; Auto ROM Replacement                                                       ; On                 ; On                 ;
+; Auto RAM Replacement                                                       ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                 ; On                 ; On                 ;
+; Auto Shift Register Replacement                                            ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                            ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                              ; On                 ; On                 ;
+; Strict RAM Replacement                                                     ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                          ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                     ; Off                ; Off                ;
+; Auto RAM Block Balancing                                                   ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                      ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                              ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                        ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                          ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                    ; On                 ; On                 ;
+; Report Parameter Settings                                                  ; On                 ; On                 ;
+; Report Source Assignments                                                  ; On                 ; On                 ;
+; Report Connectivity Checks                                                 ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                         ; Off                ; Off                ;
+; Synchronization Register Chain Length                                      ; 2                  ; 2                  ;
+; PowerPlay Power Optimization                                               ; Normal compilation ; Normal compilation ;
+; HDL message level                                                          ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                            ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                         ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100                ; 100                ;
+; Clock MUX Protection                                                       ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                ; Off                ; Off                ;
+; Block Design Naming                                                        ; Auto               ; Auto               ;
+; SDC constraint protection                                                  ; Off                ; Off                ;
+; Synthesis Effort                                                           ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                       ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                         ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                     ; On                 ; On                 ;
+; Synthesis Seed                                                             ; 1                  ; 1                  ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 2           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 2           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processor 2            ; < 0.1%      ;
+;     Processors 3-4         ;   0.0%      ;
++----------------------------+-------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                             ;
++----------------------------------+-----------------+------------------------------------+------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                                   ; Library ;
++----------------------------------+-----------------+------------------------------------+------------------------------------------------------------------------------------------------+---------+
+; dynamic_scanning.bdf             ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Hanliutong/OneDrive/Homework/Digital logic experiment/16071118/8/dynamic_scanning.bdf ;         ;
+; SEL8.v                           ; yes             ; User Verilog HDL File              ; C:/Users/Hanliutong/OneDrive/Homework/Digital logic experiment/16071118/8/SEL8.v               ;         ;
+; led.v                            ; yes             ; User Verilog HDL File              ; C:/Users/Hanliutong/OneDrive/Homework/Digital logic experiment/16071118/8/led.v                ;         ;
+; frequency_divider.v              ; yes             ; User Verilog HDL File              ; C:/Users/Hanliutong/OneDrive/Homework/Digital logic experiment/16071118/8/frequency_divider.v  ;         ;
+; shifting_register.v              ; yes             ; User Verilog HDL File              ; C:/Users/Hanliutong/OneDrive/Homework/Digital logic experiment/16071118/8/shifting_register.v  ;         ;
+; project8.bdf                     ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Hanliutong/OneDrive/Homework/Digital logic experiment/16071118/8/project8.bdf         ;         ;
+; 74138.bdf                        ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/others/maxplus2/74138.bdf                                  ;         ;
+; 74160.bdf                        ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/others/maxplus2/74160.bdf                                  ;         ;
+; keyboard_shake.v                 ; yes             ; Auto-Found Verilog HDL File        ; C:/Users/Hanliutong/OneDrive/Homework/Digital logic experiment/16071118/8/keyboard_shake.v     ;         ;
++----------------------------------+-----------------+------------------------------------+------------------------------------------------------------------------------------------------+---------+
+
+
++---------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                   ;
++---------------------------------------------+-----------------+
+; Resource                                    ; Usage           ;
++---------------------------------------------+-----------------+
+; Estimated Total logic elements              ; 218             ;
+;                                             ;                 ;
+; Total combinational functions               ; 218             ;
+; Logic element usage by number of LUT inputs ;                 ;
+;     -- 4 input functions                    ; 85              ;
+;     -- 3 input functions                    ; 28              ;
+;     -- <=2 input functions                  ; 105             ;
+;                                             ;                 ;
+; Logic elements by mode                      ;                 ;
+;     -- normal mode                          ; 125             ;
+;     -- arithmetic mode                      ; 93              ;
+;                                             ;                 ;
+; Total registers                             ; 138             ;
+;     -- Dedicated logic registers            ; 138             ;
+;     -- I/O registers                        ; 0               ;
+;                                             ;                 ;
+; I/O pins                                    ; 24              ;
+; Embedded Multiplier 9-bit elements          ; 0               ;
+; Maximum fan-out node                        ; clk_50MHz~input ;
+; Maximum fan-out                             ; 99              ;
+; Total fan-out                               ; 1044            ;
+; Average fan-out                             ; 2.58            ;
++---------------------------------------------+-----------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                    ;
++------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------+--------------+
+; Compilation Hierarchy Node   ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                          ; Library Name ;
++------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------+--------------+
+; |project8                    ; 218 (0)           ; 138 (0)      ; 0           ; 0            ; 0       ; 0         ; 24   ; 0            ; |project8                                    ; work         ;
+;    |SEL8:inst3|              ; 20 (20)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |project8|SEL8:inst3                         ; work         ;
+;    |dynamic_scanning:inst2|  ; 11 (0)            ; 4 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |project8|dynamic_scanning:inst2             ; work         ;
+;       |74138:inst2|          ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |project8|dynamic_scanning:inst2|74138:inst2 ; work         ;
+;       |74160:inst|           ; 3 (3)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |project8|dynamic_scanning:inst2|74160:inst  ; work         ;
+;    |frequency_divider:inst7| ; 135 (135)         ; 99 (99)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |project8|frequency_divider:inst7            ; work         ;
+;    |keyboard_shake:inst1|    ; 3 (3)             ; 3 (3)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |project8|keyboard_shake:inst1               ; work         ;
+;    |led:inst4|               ; 15 (15)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |project8|led:inst4                          ; work         ;
+;    |shifting_register:inst|  ; 34 (34)           ; 32 (32)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |project8|shifting_register:inst             ; work         ;
++------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
+Encoding Type:  One-Hot
++------------------------------------------------------+
+; State Machine - |project8|keyboard_shake:inst1|state ;
++----------+----------+----------+----------+----------+
+; Name     ; state.S3 ; state.S2 ; state.S1 ; state.S0 ;
++----------+----------+----------+----------+----------+
+; state.S0 ; 0        ; 0        ; 0        ; 0        ;
+; state.S1 ; 0        ; 0        ; 1        ; 1        ;
+; state.S2 ; 0        ; 1        ; 0        ; 1        ;
+; state.S3 ; 1        ; 0        ; 0        ; 1        ;
++----------+----------+----------+----------+----------+
+
+
++---------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                               ;
++----------------------------------------------------+---------------------+------------------------+
+; Latch Name                                         ; Latch Enable Signal ; Free of Timing Hazards ;
++----------------------------------------------------+---------------------+------------------------+
+; led:inst4|a                                        ; led:inst4|Decoder0  ; yes                    ;
+; led:inst4|b                                        ; led:inst4|Decoder0  ; yes                    ;
+; led:inst4|c                                        ; led:inst4|Decoder0  ; yes                    ;
+; led:inst4|d                                        ; led:inst4|Decoder0  ; yes                    ;
+; led:inst4|e                                        ; led:inst4|Decoder0  ; yes                    ;
+; led:inst4|f                                        ; led:inst4|Decoder0  ; yes                    ;
+; led:inst4|g                                        ; led:inst4|Decoder0  ; yes                    ;
+; Number of user-specified and inferred latches = 7  ;                     ;                        ;
++----------------------------------------------------+---------------------+------------------------+
+Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
+
+
++------------------------------------------------------------+
+; Registers Removed During Synthesis                         ;
++---------------------------------------+--------------------+
+; Register name                         ; Reason for Removal ;
++---------------------------------------+--------------------+
+; keyboard_shake:inst1|state.S2         ; Lost fanout        ;
+; keyboard_shake:inst1|state~4          ; Lost fanout        ;
+; keyboard_shake:inst1|state~5          ; Lost fanout        ;
+; Total Number of Removed Registers = 3 ;                    ;
++---------------------------------------+--------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 138   ;
+; Number of registers using Synchronous Clear  ; 96    ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 4     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                               ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                     ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------+
+; 4:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; Yes        ; |project8|shifting_register:inst|Dout0[2]      ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |project8|frequency_divider:inst7|cnt_100Hz[8] ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |project8|frequency_divider:inst7|cnt_1KHz[31] ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |project8|frequency_divider:inst7|cnt_1Hz[20]  ;
+; 8:1                ; 4 bits    ; 20 LEs        ; 20 LEs               ; 0 LEs                  ; No         ; |project8|SEL8:inst3|Mux0                      ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------+
+
+
++----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: frequency_divider:inst7 ;
++----------------+----------+------------------------------------------+
+; Parameter Name ; Value    ; Type                                     ;
++----------------+----------+------------------------------------------+
+; N_1            ; 50000000 ; Signed Integer                           ;
+; N_10           ; 50000000 ; Signed Integer                           ;
+; N_100          ; 50000000 ; Signed Integer                           ;
+; N_1000         ; 50000000 ; Signed Integer                           ;
++----------------+----------+------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: keyboard_shake:inst1 ;
++----------------+-------+------------------------------------------+
+; Parameter Name ; Value ; Type                                     ;
++----------------+-------+------------------------------------------+
+; S0             ; 0     ; Signed Integer                           ;
+; S1             ; 1     ; Signed Integer                           ;
+; S2             ; 2     ; Signed Integer                           ;
+; S3             ; 3     ; Signed Integer                           ;
++----------------+-------+------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:01     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Analysis & Synthesis
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
+    Info: Processing started: Thu Nov 30 13:41:39 2017
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off project8 -c project8
+Info (11104): Parallel Compilation has detected 4 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 2 of the 2 physical processors detected instead.
+Info (12021): Found 1 design units, including 1 entities, in source file dynamic_scanning.bdf
+    Info (12023): Found entity 1: dynamic_scanning
+Info (12021): Found 1 design units, including 1 entities, in source file sel8.v
+    Info (12023): Found entity 1: SEL8
+Info (12021): Found 1 design units, including 1 entities, in source file led.v
+    Info (12023): Found entity 1: led
+Info (12021): Found 1 design units, including 1 entities, in source file frequency_divider.v
+    Info (12023): Found entity 1: frequency_divider
+Info (12021): Found 1 design units, including 1 entities, in source file shifting_register.v
+    Info (12023): Found entity 1: shifting_register
+Info (12021): Found 1 design units, including 1 entities, in source file project8.bdf
+    Info (12023): Found entity 1: project8
+Info (12021): Found 1 design units, including 1 entities, in source file verilog1.v
+    Info (12023): Found entity 1: Verilog1
+Warning (10227): Verilog HDL Port Declaration warning at SEL8.v(6): data type declaration for "out" declares packed dimensions but the port declaration declaration does not
+Info (10499): HDL info at SEL8.v(5): see declaration for object "out"
+Info (12127): Elaborating entity "project8" for the top level hierarchy
+Info (12128): Elaborating entity "dynamic_scanning" for hierarchy "dynamic_scanning:inst2"
+Info (12128): Elaborating entity "74138" for hierarchy "dynamic_scanning:inst2|74138:inst2"
+Info (12130): Elaborated megafunction instantiation "dynamic_scanning:inst2|74138:inst2"
+Info (12128): Elaborating entity "74160" for hierarchy "dynamic_scanning:inst2|74160:inst"
+Info (12130): Elaborated megafunction instantiation "dynamic_scanning:inst2|74160:inst"
+Info (12128): Elaborating entity "frequency_divider" for hierarchy "frequency_divider:inst7"
+Info (12128): Elaborating entity "led" for hierarchy "led:inst4"
+Warning (10240): Verilog HDL Always Construct warning at led.v(6): inferring latch(es) for variable "a", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at led.v(6): inferring latch(es) for variable "b", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at led.v(6): inferring latch(es) for variable "c", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at led.v(6): inferring latch(es) for variable "d", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at led.v(6): inferring latch(es) for variable "e", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at led.v(6): inferring latch(es) for variable "f", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at led.v(6): inferring latch(es) for variable "g", which holds its previous value in one or more paths through the always construct
+Info (10041): Inferred latch for "g" at led.v(6)
+Info (10041): Inferred latch for "f" at led.v(6)
+Info (10041): Inferred latch for "e" at led.v(6)
+Info (10041): Inferred latch for "d" at led.v(6)
+Info (10041): Inferred latch for "c" at led.v(6)
+Info (10041): Inferred latch for "b" at led.v(6)
+Info (10041): Inferred latch for "a" at led.v(6)
+Info (12128): Elaborating entity "SEL8" for hierarchy "SEL8:inst3"
+Info (12128): Elaborating entity "shifting_register" for hierarchy "shifting_register:inst"
+Warning (12125): Using design file keyboard_shake.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: keyboard_shake
+Info (12128): Elaborating entity "keyboard_shake" for hierarchy "keyboard_shake:inst1"
+Warning (19016): Clock multiplexers are found and protected
+    Warning (19017): Found clock multiplexer shifting_register:inst|F_C~synth
+Warning (13012): Latch led:inst4|a has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal dynamic_scanning:inst2|74160:inst|8
+Warning (13012): Latch led:inst4|b has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal dynamic_scanning:inst2|74160:inst|8
+Warning (13012): Latch led:inst4|c has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal dynamic_scanning:inst2|74160:inst|8
+Warning (13012): Latch led:inst4|d has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal dynamic_scanning:inst2|74160:inst|8
+Warning (13012): Latch led:inst4|e has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal dynamic_scanning:inst2|74160:inst|8
+Warning (13012): Latch led:inst4|f has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal dynamic_scanning:inst2|74160:inst|8
+Warning (13012): Latch led:inst4|g has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal dynamic_scanning:inst2|74160:inst|8
+Info (286030): Timing-Driven Synthesis is running
+Info (17049): 3 registers lost all their fanouts during netlist optimizations.
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 243 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 9 input pins
+    Info (21059): Implemented 15 output pins
+    Info (21061): Implemented 219 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 25 warnings
+    Info: Peak virtual memory: 521 megabytes
+    Info: Processing ended: Thu Nov 30 13:41:44 2017
+    Info: Elapsed time: 00:00:05
+    Info: Total CPU time (on all processors): 00:00:03
+
+
